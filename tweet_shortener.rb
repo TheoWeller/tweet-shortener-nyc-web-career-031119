@@ -35,7 +35,7 @@ tweet.each do |tweet|
   end
 end
 
-def selective_tweet_shortener
+def selective_tweet_shortener(tweet)
   if word_substituter(tweet).length > 140
       tweet = tweet[1..140]
       tweet[-3..-1] = "..."
@@ -43,4 +43,5 @@ def selective_tweet_shortener
     else
       word_substituter(tweet)
     end
+
 end
