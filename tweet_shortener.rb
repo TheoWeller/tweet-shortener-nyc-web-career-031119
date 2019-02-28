@@ -33,3 +33,4 @@ array_of_tweets.each do |individual_tweet|
   puts word_substituter(individual_tweet)
   end
 end
+binding.pry
