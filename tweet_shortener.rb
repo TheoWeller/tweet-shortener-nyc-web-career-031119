@@ -14,15 +14,15 @@ def dictionary
   }
 end
 
-def word_substituter(string)
-subDict = dictionary.keys
-words = string.split(" ")
-string.each_with_index do |word,index|
-  if subDict.include?(word)
-    string[index] = myDict[word]
+def word_substituter(tweet)
+  dict = dictionary.keys
+  words = tweet.split(" ")
+  words.each_with_index do |word,index|
+    if dict.include? word
+      words[index] = dictionary[word]
+    end
   end
-  end
-  string.join(" ")
+words.join(" ")
 end
 
 #binding.pry
