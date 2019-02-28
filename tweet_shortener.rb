@@ -18,10 +18,10 @@ def dictionary
 end
 
 def word_substituter(tweet)
-  dict = dictionary.keys
+  sub_dict = dictionary.keys
   words = tweet.split(" ")
   words.each_with_index do |word,index|
-    if dict.include? word
+    if sub_dict.include? word
       words[index] = dictionary[word]
     end
   end
