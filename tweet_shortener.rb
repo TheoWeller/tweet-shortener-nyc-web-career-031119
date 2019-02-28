@@ -43,5 +43,4 @@ def selective_tweet_shortener(tweet)
     else
       word_substituter(tweet)
     end
-
 end
