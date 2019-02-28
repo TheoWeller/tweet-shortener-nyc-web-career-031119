@@ -34,3 +34,11 @@ tweet.each do |tweet|
   puts word_substituter(tweet)
   end
 end
+
+def selective_tweet_shortener(tweet)
+  tweet.each do |tweet|
+    if tweet.length > 140
+      word_substituter(tweet)
+    end
+  end
+end
