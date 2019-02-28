@@ -34,5 +34,3 @@ array_of_tweets.each do |individual_tweet|
   binding.pry
   end
 end
-
-
