@@ -18,7 +18,7 @@ def word_substituter(string)
 subDict = dictionary.keys
 words = string.split(" ")
 string.each_with_index do |word,index|
-  if subDict.include? word
+  if subDict.include?(word)
     string[index] = myDict[word]
   end
   end
