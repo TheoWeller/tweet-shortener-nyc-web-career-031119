@@ -31,6 +31,5 @@ end
 def bulk_tweet_shortener(array_of_tweets)
 array_of_tweets.each do |individual_tweet|
   puts word_substituter(individual_tweet)
-  binding.pry
   end
 end
